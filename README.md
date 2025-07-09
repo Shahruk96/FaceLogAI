@@ -62,7 +62,7 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<scanurag>/FaceLogAI.git
+   git clone https://github.com/scanurag/FaceLogAI.git
    cd FaceLogAI
  ---
 
