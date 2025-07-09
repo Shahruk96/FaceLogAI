@@ -42,10 +42,52 @@
 - 🔒 Modular and clean architecture
 
 ---
+## 📂 Project Structure 
+FaceLogAI/
+│
+├── src/main/java/com/org/
+│   ├── controller/     # REST API controllers
+│   ├── service/        # Business logic (FaceService)
+│   ├── model/          # Data models (e.g., Attendance)
+│   └── repository/     # JPA repositories for database operations
+│
+├── src/main/resources/
+│   ├── application.properties          # Configuration file
+│   ├── haarcascade_frontalface_alt.xml # HaarCascade for face detection
+│   └── trained_faces/lbph_model.xml    # Trained face recognition model
+│
+├── C:/training_images/user<ID>/        # Auto-generated training images
+├── C:/menu_images/user<ID>/            # Auto-generated menu images
+└── README.md 
+
+---
+
+## ⚙️ API Endpoints
+
+| Endpoint                                   | Method | Description                              |
+|--------------------------------------------|--------|------------------------------------------|
+| `/api/face/capture/{userId}/{numImages}`   | GET    | Capture training images for a user       |
+| `/api/face/train`                          | GET    | Train the face recognition model         |
+| `/api/face/mark-attendance`                | GET    | Mark attendance using webcam             |
+| `/api/face/mark-attendance-from-image`     | POST   | Mark attendance from an uploaded image   |
+| `/api/face/clear-images/{userId}`          | GET    | Clear training images for a user         |
+| `/api/face/upload-menu-image/{userId}`     | POST   | Upload a menu image for a user           |
+| `/api/face/menu-images/{userId}/view/{imageName}` | GET | View a user's uploaded menu image |
+
+--- 
+
 
 ## 📦 Setup Instructions
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/FaceLogAI.git
+   git clone https://github.com/<scanurag>/FaceLogAI.git
    cd FaceLogAI
+ ---
+
+## 🤝 Contributing
+
+Star ⭐ the repo if you find it useful!  
+Feel free to submit pull requests, report issues, or suggest improvements. 🚀
+
+---
