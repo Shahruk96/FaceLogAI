@@ -42,25 +42,6 @@
 - 🔒 Modular and clean architecture
 
 ---
-## 📂 Project Structure 
-FaceLogAI/
-│
-├── src/main/java/com/org/
-│   ├── controller/     # REST API controllers
-│   ├── service/        # Business logic (FaceService)
-│   ├── model/          # Data models (e.g., Attendance)
-│   └── repository/     # JPA repositories for database operations
-│
-├── src/main/resources/
-│   ├── application.properties          # Configuration file
-│   ├── haarcascade_frontalface_alt.xml # HaarCascade for face detection
-│   └── trained_faces/lbph_model.xml    # Trained face recognition model
-│
-├── C:/training_images/user<ID>/        # Auto-generated training images
-├── C:/menu_images/user<ID>/            # Auto-generated menu images
-└── README.md 
-
----
 
 ## ⚙️ API Endpoints
 
