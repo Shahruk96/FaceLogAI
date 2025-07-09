@@ -8,7 +8,6 @@
   <img src="https://img.shields.io/badge/Build-Success-brightgreen" />
   <img src="https://img.shields.io/badge/SpringBoot-3.x-blue" />
   <img src="https://img.shields.io/badge/OpenCV-JavaCV-orange" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
 </p>
 
 ---
